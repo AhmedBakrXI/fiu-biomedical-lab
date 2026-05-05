@@ -52,7 +52,7 @@ const LocationSection = () => {
                 className='flex-1 w-full h-[24rem]'
             >
                 <iframe
-                    src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.8987533232144!2d31.4744058!3d30.0397624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145823ef4bdb87f5%3A0x695b5fde31f60687!2sTexcoms%20worldwide!5e0!3m2!1sen!2seg!4v1758537908918!5m2!1sen!2seg'
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2000.020088928727!2d-80.367822!3d25.7699!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b92ab588fbd9%3A0x240f4f920785d1cf!2s10555%20W%20Flagler%20St%2C%20Miami%2C%20FL%2033174!5e0!3m2!1sen!2sus!4v1778004247140!5m2!1sen!2sus"
                     className='w-full h-full rounded-xl shadow-lg'
                     allowFullScreen={true}
                     loading='lazy'
