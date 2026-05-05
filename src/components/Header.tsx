@@ -10,8 +10,6 @@ import {
 } from "../components/ui/dropdown-menu"
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Separator } from 'radix-ui';
-
 
 const Header = () => {
     const [isResearchHovered, setIsResearchHovered] = useState(false);

@@ -8,7 +8,6 @@ import { Button } from "../components/ui/button";
 import { motion } from "framer-motion";
 import { SlLocationPin } from 'react-icons/sl';
 import { MdOutlineMailOutline } from 'react-icons/md';
-import { BsTelephone } from 'react-icons/bs';
 
 const LocationSection = () => {
     return (
