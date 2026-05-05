@@ -49,7 +49,7 @@ const LocationSection = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 1 }}
-                className='flex-1 w-full h-[24rem]'
+                className='flex-1 w-full h-96'
             >
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2000.020088928727!2d-80.367822!3d25.7699!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b92ab588fbd9%3A0x240f4f920785d1cf!2s10555%20W%20Flagler%20St%2C%20Miami%2C%20FL%2033174!5e0!3m2!1sen!2sus!4v1778004247140!5m2!1sen!2sus"
@@ -88,7 +88,6 @@ function ContactForm() {
         alert("Message sent successfully!");
     };
 
-    // Reusable Tailwind classes to mimic Shadcn
     const labelStyles = "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70";
     const inputStyles = "flex h-10 w-full rounded-xl border border-secondary px-3 py-2 text-sm ring-offset-white file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-secondary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-950 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50";
     const errorStyles = "text-sm font-medium text-red-500";
@@ -196,9 +195,9 @@ function ContactForm() {
 
 const ContactCard = () => {
     return (
-        <Card className="bg-primary-foreground text-primary shadow-lg h-auto w-full md:w-3/4 p-0">
+        <Card className="bg-primary-foreground text-primary shadow-lg h-auto min-h-144 max-w-7xl w-full md:w-full p-0">
             <CardContent className="flex flex-col md:flex-row justify-center items-center gap-0 w-full h-full p-0">
-                <div className="relative h-full w-1/2 hidden md:flex overflow-hidden">
+                <div className="relative h-[stretch] w-1/2 hidden md:flex overflow-hidden">
                     {/* 1. The Map (Background Layer) */}
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2000.020088928727!2d-80.367822!3d25.7699!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b92ab588fbd9%3A0x240f4f920785d1cf!2s10555%20W%20Flagler%20St%2C%20Miami%2C%20FL%2033174!5e0!3m2!1sen!2sus!4v1778004247140!5m2!1sen!2sus"
@@ -224,7 +223,7 @@ const Contact = () => {
     return (
         <>
             <Header />
-            <main className="h-auto py-12 md:h-screen w-full bg-linear-to-br from-primary to-secondary flex flex-col items-center justify-center px-8 md:px-16 gap-4">
+            <main className="h-auto py-12 md:min-h-screen w-full bg-linear-to-br from-primary to-secondary flex flex-col items-center justify-center px-8 md:px-16 gap-4">
                 <ContactCard />
             </main>
             <LocationSection />
